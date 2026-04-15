@@ -1,0 +1,9 @@
+package javaPack;
+
+public class Main 
+{
+	public static void main(String[] args) 
+	{
+		PrimeFinder find = new PrimeFinder();
+	}
+}
