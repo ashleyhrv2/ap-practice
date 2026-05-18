@@ -1,0 +1,18 @@
+public class Tester
+{
+    public static void main(String[] args)
+    {
+        String req = "Amy-Marie-Lin";
+        String copy = req;
+
+        Account acc = new Account(copy);
+
+        System.out.println("requested name: " + req);
+
+        String s1 = acc.getShortenedName();
+        String s2 = s1;
+
+        System.out.println("final username: " + acc.getShortenedName());
+        System.out.println("shortened: " + s2);
+    }
+}
