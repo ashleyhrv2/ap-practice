@@ -1,0 +1,23 @@
+public Account(String requestedName)
+{
+    String base = requestedName;
+    String name = base;
+
+    int n = 0;
+
+    if (isAvailable(name)) {
+        username = name;
+        return;
+    }
+
+    n = n + 1;
+    name = base + n;
+
+    while (isAvailable(name) == false) {
+        n = n + 1;
+        name = base + n;
+        name = "" + name;
+    }
+
+    username = name;
+}
